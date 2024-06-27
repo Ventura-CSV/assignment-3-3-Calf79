@@ -5,8 +5,13 @@ def main():
     Code Your Program here
     ########################################
     """
-    result = True
-
+    alphabet = email[0].isalpha()
+    length = 5 <len(email)<30
+    need = '@' in email
+    dotn = '.' in email [email.index('@'):]
+    result = alphabet and length and need and dotn
+    print(result)
+    
     ########################################
     # Do not delete the return statement
     ########################################
